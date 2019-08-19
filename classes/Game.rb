@@ -30,7 +30,7 @@ class Game
   end
 
   def game_over
-    puts "#{@current_player.name} has run out of lives by somehow managing to get 3 basic arithmetic question wrong. If #{@current_player.name} is over the age of 10, this should really be seen as a warning sign for a potentially much larger problem"
+    puts "#{@current_player.name} has run out of lives by somehow managing to get 3 basic arithmetic question wrong. If #{@current_player.name} is over the age of 10, this should really be seen as a warning sign for a potentially much larger problem."
   end
 
   def run_game
@@ -52,13 +52,13 @@ class Game
       puts "nope....\n"
       @current_player.lose_a_life
     else 
-      puts "yup!\n"
+      puts "yup!\n\n"
     end
     
     if (@current_player.lives == 0)
       game_over
     else
-    puts "The score stants at\n#{@player_1.name}: #{@player_1.lives} / 3 lives remaining\n#{@player_2.name}: #{@player_2.lives} / 3 lives remaining\n"
+    puts "The score stands at\n#{@player_1.name}: #{@player_1.lives} / 3 lives remaining\n#{@player_2.name}: #{@player_2.lives} / 3 lives remaining\n\n"
     switch_player
     end
   end

@@ -3,7 +3,7 @@ class Player
 
   def initialize(name)
     @lives = 3
-    @name = name # not sure I need this
+    @name = name 
   end
 
   def lose_a_life
@@ -12,9 +12,7 @@ class Player
 
 end
 
-p1 = Player.new("p1")
 
-puts p1.lives
-p1.lose_a_life
-puts p1.lives
+
+
 
